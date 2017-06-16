@@ -1,6 +1,6 @@
 {
   "name": "react-native-checkbox-group",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React native checkbox group component",
   "main": "checkboxGroup.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ataomega/react-native-checkbox-group.git"
+  },
+  "dependencies": {
+    "react-native-vector-icons": "^3.0.0"
   },
   "keywords": [
     "React",

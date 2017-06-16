@@ -57,7 +57,7 @@ export default class CheckboxGroup extends Component {
   }
 
   render(){
-    const { checkboxes, iconColor, iconSize, labelStyle, checkedIcon, uncheckedIcon } = this.props;
+    const { checkboxes, iconColor, iconSize, labelStyle, checkedIcon, uncheckedIcon, rowStyle } = this.props;
 
     return(
       <View
@@ -69,19 +69,24 @@ export default class CheckboxGroup extends Component {
         }}
       >
         {checkboxes.map((checkbox, index)=>{
-          <TouchableOpacity
-            key={index}
-            style={{ flexDirection: 'row' }}
-            onPress={()=>{
-              this._onSelect(checkbox.value)
-            }}
-          >
-            {this._isSelected(checkbox.value) ?
-              <Icon name={checkedIcon} color={iconColor} size={iconSize}/>
-              : <Icon name={uncheckedIcon} color={iconColor} size={iconSize}/>
-            }
-            <Text style={labelStyle}>{checkbox.label}</Text>
-          </TouchableOpacity>
+          if(checkbox.selected){
+            this._onSelect(checkbox.value)
+          }
+          return(
+            <TouchableOpacity
+              key={index}
+              style={rowStyle}
+              onPress={()=>{
+                this._onSelect(checkbox.value)
+              }}
+            >
+              {this._isSelected(checkbox.value) ?
+                <Icon name={checkedIcon} color={iconColor} size={iconSize}/>
+                : <Icon name={uncheckedIcon} color={iconColor} size={iconSize}/>
+              }
+              <Text style={labelStyle}>{checkbox.label}</Text>
+            </TouchableOpacity>
+          )
         })}
       </View>
     );
