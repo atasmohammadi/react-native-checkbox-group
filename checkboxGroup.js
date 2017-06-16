@@ -57,14 +57,14 @@ export default class CheckboxGroup extends Component {
   }
 
   render(){
-    const { checkboxes, iconColor, iconSize, labelStyle, checkedIcon, uncheckedIcon, rowStyle } = this.props;
+    const { checkboxes, iconColor, iconSize, labelStyle, checkedIcon, uncheckedIcon, rowStyle, rowDirection } = this.props;
 
     return(
       <View
         onLayout={(evt)=>{this.getNewDimensions(evt)}}
         style={{
           flex: 1,
-          flexDirection: 'column',
+          flexDirection: rowDirection,
           padding: 5
         }}
       >

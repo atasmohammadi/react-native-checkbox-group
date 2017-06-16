@@ -32,8 +32,11 @@ import CheckboxGroup from 'react-native-checkbox-group'
               rowStyle={{
                 flexDirection: 'row'
               }}
+              rowDirection={"column"}
             />
 ```
+
+![react-native-checkbox-group](https://raw.githubusercontent.com/ataomega/react-native-checkbox-group/master/screenshot.png)
 
 ### Props:
 | Prop | Type | Description |
@@ -43,6 +46,10 @@ import CheckboxGroup from 'react-native-checkbox-group'
 | iconSize | Integer | icon size for checked/unchecked icons |
 | checkedIcon | String | selected/checked icon name (react-native-vector-icons/Ionicon) |
 | uncheckedIcon | String | unselected/unchecked icon name (react-native-vector-icons/Ionicon) |
+| checkboxes | Object | checkboxes. see the example. |
+| labelStyle | Object | styles for checkbox label |
+| rowStyle | Object | styles for each checkbox |
+| rowDirection | String | column or row. how to list checkboxes |
 
 ### Author:
 Ata S.Mohammadi.
