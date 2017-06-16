@@ -17,9 +17,9 @@ import CheckboxGroup from 'react-native-checkbox-group'
               uncheckedIcon="ios-square-outline"
               checkboxes={[
                 {
-                  label: "first",
-                  value: 1,
-                  selected: true
+                  label: "first", // label for checkbox item
+                  value: 1, // selected value for item, if selected, what value should be sent?
+                  selected: true // if the item is selected by default or not.
                 },
                 {
                   label: "second",
