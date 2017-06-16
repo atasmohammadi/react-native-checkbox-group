@@ -1,0 +1,27 @@
+{
+  "name": "react-native-checkbox-group",
+  "version": "1.0.0",
+  "description": "React native checkbox group component",
+  "main": "checkboxGroup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataomega/react-native-checkbox-group.git"
+  },
+  "keywords": [
+    "React",
+    "react",
+    "native",
+    "checkbox",
+    "checkbox",
+    "group"
+  ],
+  "author": "Ata S.Mohammadi (ataomega@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ataomega/react-native-checkbox-group/issues"
+  },
+  "homepage": "https://github.com/ataomega/react-native-checkbox-group#readme"
+}
