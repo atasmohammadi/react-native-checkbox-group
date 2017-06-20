@@ -24,6 +24,15 @@ export default class CheckboxGroup extends Component {
     };
   }
 
+  componentDidMount = () => {
+    this.props.checkboxes.map(checkbox=>{
+        if(checkbox.selected){
+          this._onSelect(checkbox.value)
+        }
+      }
+    )
+  }
+
   getNewDimensions(event){
         var pageHeight = event.nativeEvent.layout.height
         var pageWidth = event.nativeEvent.layout.width
@@ -69,9 +78,6 @@ export default class CheckboxGroup extends Component {
         }}
       >
         {checkboxes.map((checkbox, index)=>{
-          if(checkbox.selected){
-            this._onSelect(checkbox.value)
-          }
           return(
             <TouchableOpacity
               key={index}
