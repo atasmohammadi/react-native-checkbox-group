@@ -41,6 +41,12 @@ export default class CheckboxGroup extends Component {
         })
     }
 
+updateBoxes(indexes){
+      this.setState ({
+        selected : indexes
+      })
+  }
+
   _onSelect = (item) => {
     var selected = this.state.selected
     if(selected.indexOf(item) == -1){
